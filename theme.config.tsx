@@ -9,17 +9,15 @@ const config: DocsThemeConfig = {
   sidebar: {
     defaultMenuCollapseLevel: 10000,
   },
-  docsRepositoryBase: "https://github.com/vercel/turbo/blob/main/docs",
+  docsRepositoryBase:
+    "https://github.com/TinsFox/front-end-diary/blob/main/docs",
   useNextSeoProps: function SEO() {
     const router = useRouter();
     const { frontMatter } = useConfig();
 
-    let section = "Turbo";
-    if (router?.pathname.startsWith("/pack")) {
-      section = "Turbopack";
-    }
-    if (router?.pathname.startsWith("/repo")) {
-      section = "Turborepo";
+    let section = "Front End Diary";
+    if (router?.pathname.startsWith("/diary")) {
+      section = "Diary";
     }
 
     const defaultTitle = frontMatter.overrideTitle || section;

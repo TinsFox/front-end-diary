@@ -10,12 +10,6 @@
       "toc": true
     }
   },
-  "blog": {
-    "title": "Blog",
-    "theme": {
-      "typesetting": "article"
-    }
-  },
   "diary": {
     "title": "Diary",
     "theme": {

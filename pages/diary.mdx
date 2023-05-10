@@ -1,12 +1,12 @@
 ---
-description: The latest updates and releases from the Turbo team at Vercel.
-type: posts
+description: The latest news.
+type: diaries
 ---
 
 import { getPagesUnderRoute } from "nextra/context";
 import Link from "next/link";
 
-export function BlogHeader() {
+export function DiaryHeader() {
   return (
     <div className="max-w-screen-lg mx-auto pt-4 pb-8 mb-16 border-b border-gray-400 border-opacity-20">
       <h1>
@@ -19,7 +19,7 @@ export function BlogHeader() {
   );
 }
 
-export function BlogIndex() {
+export function DiaryIndex() {
   return getPagesUnderRoute("/diary").map((page) => {
     return (
       <div key={page.route} className="mb-10">
@@ -40,5 +40,5 @@ export function BlogIndex() {
   });
 }
 
-<BlogHeader />
-<BlogIndex />
+<DiaryHeader />
+<DiaryIndex />

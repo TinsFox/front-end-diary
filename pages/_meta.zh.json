@@ -1,0 +1,19 @@
+{
+  "*": {
+    "type": "page"
+  },
+  "index": {
+    "display": "hidden",
+    "theme": {
+      "layout": "raw",
+      "sidebar": false,
+      "toc": true
+    }
+  },
+  "diary": {
+    "title": "日记",
+    "theme": {
+      "typesetting": "article"
+    }
+  }
+}

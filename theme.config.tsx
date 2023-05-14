@@ -9,6 +9,7 @@ const config: DocsThemeConfig = {
   sidebar: {
     defaultMenuCollapseLevel: 10000,
   },
+
   docsRepositoryBase:
     "https://github.com/TinsFox/front-end-diary/blob/main/docs",
   useNextSeoProps: function SEO() {
@@ -57,7 +58,10 @@ const config: DocsThemeConfig = {
   // font: false,
   logo: HeaderLogo,
   logoLink: false,
-  i18n: [],
+  i18n: [
+    { locale: "en", text: "English" },
+    { locale: "zh", text: "中文" },
+  ],
   editLink: {
     text: "Edit this page on GitHub",
   },
